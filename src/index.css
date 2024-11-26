@@ -1,0 +1,208 @@
+Reset de estilos
+---------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------------
+   Estilos generales
+---------------------------- */
+body {
+    width: 100vw;
+    font-family: 'Poppins', sans-serif; /* Cambia a una fuente moderna */
+    line-height: 1.6;
+    background-color: #1a1a2e; /* Fondo oscuro y elegante */
+    color: #f5f5f5; /* Texto claro */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---------------------------
+   Encabezado
+---------------------------- */
+header {
+    width: 100%;
+    text-align: center;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #0f3460; /* Fondo del encabezado */
+}
+
+header h1 {
+    color: #e94560; /* Título principal en rojo coral */
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #c5c6c7; /* Subtítulo en tono gris claro */
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.5rem 0;
+}
+
+nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e94560; /* Rojo coral al pasar el mouse */
+}
+
+/* ---------------------------
+   Secciones generales
+---------------------------- */
+section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 1.5rem 0;
+    background-color: #16213e; /* Fondo de las secciones */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #f5f5f5;
+}
+
+/* Títulos de las secciones */
+section h2 {
+    font-size: 2rem;
+    color: #e94560;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* ---------------------------
+   Sección: About Me
+---------------------------- */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Imagen circular */
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+}
+
+#about p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #c5c6c7; /* Texto en gris claro */
+    text-align: center;
+}
+
+/* ---------------------------
+   Sección: Proyectos
+---------------------------- */
+#projects .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+#projects .project {
+    background-color: #1a1a2e; /* Fondo de las tarjetas */
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 20rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#projects .project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+#projects .project h3 {
+    padding-bottom: 1rem;
+    color: #e94560;
+}
+
+/* ---------------------------
+   Sección: Habilidades
+---------------------------- */
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#skills li {
+    background-color: #0f3460; /* Fondo de cada habilidad */
+    color: #f5f5f5;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* ---------------------------
+   Formulario de contacto
+---------------------------- */
+#contact form {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact input, #contact textarea {
+    padding: 0.8rem;
+    border: 1px solid #e94560; /* Bordes en rojo coral */
+    border-radius: 5px;
+    background-color: #1a1a2e;
+    color: #f5f5f5;
+}
+
+#contact button {
+    background-color: #e94560;
+    color: #f5f5f5;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#contact button:hover {
+    background-color: #0f3460;
+    color: #e94560;
+}
+
+/* ---------------------------
+   Pie de página
+---------------------------- */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0f3460;
+    color: #f5f5f5;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: 2rem;
+}
